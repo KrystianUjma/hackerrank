@@ -3,27 +3,31 @@ package codility;
 /**
  * Created by kamil on 2015-10-17.
  */
-public class Solution2 {
+
+class Solution2 {
+    public int solution(int Q) {
+        int firstSquare;
+        int secondSquare;
+
+        int counter = 0;
 
 
-    public int solution(int q){
-        int n;
-        int m;
+        for (firstSquare = 0; firstSquare <= Q; firstSquare++) {
+            secondSquare = Q - firstSquare;
 
-        int pairs;
-
-//        q = n*n + m*m;
-        int max = (int) Math.sqrt(q);
-
-
-        if(q ==0)
-//        int counter = 0;
-        for(int i = 0; i <= max ; i++){
-
+            int firstNumber = (int) Math.sqrt(firstSquare);
+            if (firstNumber * firstNumber == firstSquare) {
+                int secondNumber = (int) Math.sqrt(secondSquare);
+                if (secondNumber * secondNumber == secondSquare) {
+                    if (firstNumber == 0 && secondNumber == 0) {
+                        counter += 1;
+                    } else {
+                        counter += 4;
+                    }
+                }
+            }
         }
-        max++;
-        return max*2;
+
+        return counter;
     }
-
-
 }

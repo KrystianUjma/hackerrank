@@ -23,7 +23,7 @@ public class DiagonalDifference {
                 "-8 -3 -4 2 -3 7 -5 1 -5\n" +
                 "-2 -7 -4 8 3 -1 8 2 3\n" +
                 "-3 4 6 -7 -7 -8 -3 9 -6\n" +
-                "-2 0 5 4 4 4 -3 3 0"); // wynik to 52
+                "-2 0 5 4 4 4 -3 3 0"); // returns 52
 
         int size = scanner.nextInt();
 

@@ -60,6 +60,6 @@ public class DiagonalDifference {
             sum2 += array[y][size - y - 1];
         }
 
-        return sum2 - sum1;
+        return Math.abs(sum2 - sum1);
     }
 }
